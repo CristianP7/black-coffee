@@ -405,6 +405,7 @@ body{
 }
 
 .banner__text{
+    text-align: center;
     margin: 0 auto;
     color: var(--white);
     font-family: var(--font-tittle);
@@ -425,7 +426,6 @@ body{
 @media screen and (min-width:800px){
 
     .banner__text{
-        text-align: center;
         width: 100%;
     }
 
@@ -567,7 +567,7 @@ body{
 
 .banner_text--second{
     width: 100%;
-    text-align: justify;
+    text-align: center;
     font-size: 1.35rem;
 }
 
@@ -577,7 +577,6 @@ body{
 
 @media screen and (min-width:600px){
     .banner_text--second{
-        text-align: center;
         font-size: 2rem;
     }
 }
