@@ -265,7 +265,7 @@ body{
 }
 
 .about__card{
-    max-width: 400px;
+    max-width: 380px;
     margin: 0 auto;
     height: 420px;
     display: flex;
@@ -286,6 +286,7 @@ body{
 }
 
 .about__card-copy{
+    height: 120px;
     font-size: 1rem;
     font-weight: 400;
     text-align: justify;
@@ -295,7 +296,6 @@ body{
 }
 
 .about__card-tittle, .about__card-copy{
-    margin: 10px 0 16px 0 ;
     padding: 0 16px;
 }
 
@@ -320,3 +320,53 @@ body{
 
 
 /* ======= ABOUT QUERIES STARTS =======  */
+
+@media screen and (min-width:800px){
+    .about__cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (min-width:1200px){
+    .about__cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem 3rem;
+    }
+
+    .about__card--grid{
+        grid-column: 2/3;
+    }
+
+    .about__cta{
+        color: var(--dark-brown);
+        outline: 1px solid var(--brown);
+        background-color: #58351e00;
+    }
+    
+    .about__cta:hover{
+        background-color: var(--dark-brown);
+        color: var(--white);
+    }
+    
+
+
+}
+
+@media screen and (min-width:1600px){
+    .about__cards{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .about__card--grid{
+        grid-column: 4/5;
+    }
+
+    .about__card{
+        max-width: 400px;
+    }
+}
+
+
