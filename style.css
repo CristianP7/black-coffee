@@ -495,7 +495,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 5rem 0;
+    gap: 1rem 0;
 }
 
 .dessert__card{
