@@ -9,6 +9,8 @@
     --brown :#58351E;
     --black:#000; 
     --white: #fff;
+    --font-tittle:"Noto Serif", serif;
+    --font-copy:'Roboto', sans-serif;
 }
 
 body{
@@ -74,6 +76,9 @@ body{
 
 /* ======= HEADER SECTION END =======  */
 
+/* ======= HEADER QUERIES START =======  */
+
+
 @media screen and (min-width:850px){
 
     .header__flex{
@@ -102,6 +107,9 @@ body{
         font-weight: 500;
     }
 }
+
+/* ======= HEADER QUERIES ENDS =======  */
+
 
 /* ======= HERO SECTION =======  */
 
@@ -169,6 +177,9 @@ body{
     text-transform: uppercase;
 }
 
+/* ======= HERO SECTION ENDS =======  */
+
+
 /* ======= HERO SECTION QUERIES STARTS =======  */
 
 @media screen and (min-width:800px){
@@ -198,4 +209,114 @@ body{
     
 }
 
-/* ======= HERO SECTION =======  */
+/* ======= HERO SECTION QUERIES ENDS =======  */
+
+
+/* ======= ABOUT START =======  */
+
+.about{
+    padding: 40px 0;
+}
+
+.about__texts{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about__tittle{
+    font-size: 2rem;
+    color: var(--dark-brown);
+    text-transform: uppercase;
+    font-family: var(--font-tittle);
+}
+
+.about__tittle::after{
+    content: "";
+    display: block;
+    margin: 6px auto;
+    width: 40%;
+    height: 1px;
+    background-color: var(--brown);
+    
+}
+
+.about__copy{
+    color: var(--brown);
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: .85rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 60px;
+}
+
+.about__img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.about__cards{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    text-align: center;
+}
+
+.about__card{
+    max-width: 400px;
+    margin: 0 auto;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffff;
+    outline: 1px solid #3024142c;
+    padding-bottom: 12px;
+}
+
+
+.about__card-tittle{
+    font-size: 1.35rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: var(--dark-brown);
+    text-transform: uppercase;
+}
+
+.about__card-copy{
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: justify;
+    color: var(--brown);
+    line-height: 1.5;
+    word-break: normal;
+}
+
+.about__card-tittle, .about__card-copy{
+    margin: 10px 0 16px 0 ;
+    padding: 0 16px;
+}
+
+.about__cta{
+    text-decoration: none;
+    display: inline-block;
+    color: var(--white);
+    background-color: var(--black);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    width: 150px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.about__cta:hover{
+    background-color: var(--dark-brown);
+}
+
+/* ======= ABOUT END =======  */
+
+
+/* ======= ABOUT QUERIES STARTS =======  */
