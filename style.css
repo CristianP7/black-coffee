@@ -214,6 +214,10 @@ body{
 
 /* ======= ABOUT START =======  */
 
+.container--80{
+    width: 80%;
+}
+
 .about{
     padding: 60px 0;
 }
