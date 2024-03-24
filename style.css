@@ -438,7 +438,85 @@ body{
 
 }
 
-
-
-
 /* ======= BANNER QUERIES END =======  */
+
+
+/* ======= DESSERT START =======  */
+
+.dessert{
+    text-align: center;
+    padding: 4rem;
+}
+
+.dessert__tittle{
+    font-size: 2rem;
+    color: var(--dark-brown);
+    text-transform: uppercase;
+    font-family: var(--font-tittle);
+}
+
+.dessert__tittle::after{
+    content: "";
+    display: block;
+    margin: 6px auto;
+    width: 60%;
+    height: 1px;
+    background-color: var(--brown);
+    
+}
+
+.dessert__copy{
+    color: var(--brown);
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: .85rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 60px;
+}
+
+.dessert__img{
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.274);
+    cursor: pointer;
+}
+
+.dessert__cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem 0;
+}
+
+.dessert__card{
+    max-width: 480px;
+}
+
+.dessert__texts{
+    margin-top: 1rem;
+}
+
+.dessert__name{
+    text-transform: uppercase;
+    font-family: var(--font-tittle);
+    color: var(--dark-brown);
+    margin-bottom: 7px;
+    font-size: 1.65rem;
+    letter-spacing: 0.10rem;
+    font-weight: 800;
+}
+
+.dessert__info{
+    color: var(--brown);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.15rem;
+    font-weight: 300;
+}
+
+/* ======= DESSERTS END =======  */
+
+
+/* ======= DESSERT QUERIES START =======  */
