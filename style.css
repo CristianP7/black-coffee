@@ -35,26 +35,37 @@ body{
     display: none;
 }
 
-.header__open-nav-button, .fa-solid{
+.header__open-nav-button{
     font-size: 1.35rem;
+    color: var(--dark-brown);
 }
 
 .header__open-nav-button:hover{
+    color: var(--brown);
+}
+
+.fa-solid{
+    font-size: 1.35rem;
     color: var(--dark-brown);
 }
 
 .fa-solid:hover{
-    color: var(--dark-brown);
+    color: var(--brown);
 }
 
 .header__logo{
     font-family: "Noto Serif", serif;
     font-size: 1.5rem;
     font-weight: 700;
+    color: var(--dark-brown);
 }
 
 .header__logo:hover{
-    color: var(--dark-brown);
+    color: var(--brown);
+}
+
+.hero__nav{
+    display: none;
 }
 
 .header__open-nav-button, .fa-solid, .header__logo{
@@ -63,6 +74,34 @@ body{
 
 /* ======= HEADER SECTION END =======  */
 
+@media screen and (min-width:850px){
+
+    .header__flex{
+        height: 90px;
+    }
+
+    .header__checkbox-container{
+        display: none;
+    }
+
+    .hero__nav{
+        display: block;
+    }
+
+    .hero__lists{
+        list-style: none;
+        display: flex;
+        gap: 1.8rem;
+    }
+
+    .hero__items a{
+        font-family: "Noto Serif", serif;
+        font-size: 1.10rem;
+        color: var(--dark-brown);
+        text-decoration: none;
+        font-weight: 500;
+    }
+}
 
 /* ======= HERO SECTION =======  */
 
@@ -97,7 +136,7 @@ body{
 .hero__tittle::before{
     content: "";
     width: 80%;
-    max-width: 550px;
+    max-width: 320px;
     margin: 0 auto;
     height: 1px;
     background-color: var(--white);
@@ -108,7 +147,7 @@ body{
 .hero__tittle::after{
     content: "";
     width: 80%;
-    max-width: 550px;
+    max-width: 320px;
     margin: 0 auto;
     height: 1px;
     background-color: var(--white);
@@ -129,3 +168,34 @@ body{
     font-weight: 400;
     text-transform: uppercase;
 }
+
+/* ======= HERO SECTION QUERIES STARTS =======  */
+
+@media screen and (min-width:800px){
+
+    .hero__tittle{
+        font-size: 3rem;
+        font-weight: 300;
+        letter-spacing: 0.0625rem;
+    }
+
+    .hero__span{
+        font-size: 6rem;
+        font-weight: 800;
+        letter-spacing: 0.0625rem;
+    }
+
+    .hero__tittle::before{
+        max-width: 620px;
+        margin-bottom: 18px;
+    }
+    
+    .hero__tittle::after{
+        max-width: 620px;
+        margin-top: 18px;
+        margin-bottom: 12px;
+    }
+    
+}
+
+/* ======= HERO SECTION =======  */
