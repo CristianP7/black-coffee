@@ -568,15 +568,18 @@ body{
 .banner_text--second{
     width: 100%;
     text-align: justify;
+    font-size: 1.35rem;
 }
 
 /* ======= BANNER END =======  */
 
-@media screen and (min-width:800px){
+/* ======= BANNER QUERIES START =======  */
+
+@media screen and (min-width:600px){
     .banner_text--second{
         text-align: center;
+        font-size: 2rem;
     }
 }
 
-/* ======= BANNER QUERIES START =======  */
-
+/* ======= BANNER QUERIES END =======  */
