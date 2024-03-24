@@ -267,7 +267,7 @@ body{
 .about__card{
     max-width: 400px;
     margin: 0 auto;
-    height: 380px;
+    height: 420px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
