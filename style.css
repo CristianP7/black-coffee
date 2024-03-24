@@ -405,7 +405,6 @@ body{
 }
 
 .banner__text{
-    text-align: center;
     margin: 0 auto;
     color: var(--white);
     font-family: var(--font-tittle);
