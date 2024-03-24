@@ -394,7 +394,7 @@ body{
 
 .banner{
     width: 100%;
-    height: 40vh;
+    height: 50vh;
     background-image: linear-gradient(180deg, #00000096, #020202c2), url(./img/homemade\ 2.jpg);
     background-size: cover;
     background-position: center;
@@ -558,3 +558,25 @@ body{
 }
 
 /* ======= DESSERT QUERIES END =======  */
+
+/* ======= BANNER SECTION START =======  */
+
+.banner--second{
+    background-image: linear-gradient(180deg, #00000096, #020202c2), url(/img/no\ se\ pero\ puede\ servirme.jpg);
+}
+
+.banner_text--second{
+    width: 100%;
+    text-align: justify;
+}
+
+/* ======= BANNER END =======  */
+
+@media screen and (min-width:800px){
+    .banner_text--second{
+        text-align: center;
+    }
+}
+
+/* ======= BANNER QUERIES START =======  */
+
