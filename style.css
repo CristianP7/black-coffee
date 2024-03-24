@@ -4,6 +4,128 @@
     box-sizing: border-box;
 }
 
+:root{
+    --dark-brown: #302414;
+    --brown :#58351E;
+    --black:#000; 
+    --white: #fff;
+}
+
 body{
-    font-family: '';
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1efef;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* ======= HEADER SECTION =======  */
+
+.header__flex{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__checkbox{
+    display: none;
+}
+
+.header__open-nav-button, .fa-solid{
+    font-size: 1.35rem;
+}
+
+.header__open-nav-button:hover{
+    color: var(--dark-brown);
+}
+
+.fa-solid:hover{
+    color: var(--dark-brown);
+}
+
+.header__logo{
+    font-family: "Noto Serif", serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.header__logo:hover{
+    color: var(--dark-brown);
+}
+
+.header__open-nav-button, .fa-solid, .header__logo{
+    cursor: pointer;
+}
+
+/* ======= HEADER SECTION END =======  */
+
+
+/* ======= HERO SECTION =======  */
+
+.hero{
+    width: 100%;
+    height: 70vh;
+    background-image: linear-gradient(180deg, #00000062, #0202027a),   url(img/hero\ img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__texts{
+    width: 90%;
+    color: var(--white);
+    text-align: center;
+}
+
+.hero__tittle{
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 1.25rem;
+    letter-spacing: 0.0625rem;
+    text-transform: uppercase;
+    padding: 12px 0;
+}
+
+.hero__tittle::before{
+    content: "";
+    width: 80%;
+    max-width: 550px;
+    margin: 0 auto;
+    height: 1px;
+    background-color: var(--white);
+    opacity: .5;
+    margin-bottom: 12px;
+}
+
+.hero__tittle::after{
+    content: "";
+    width: 80%;
+    max-width: 550px;
+    margin: 0 auto;
+    height: 1px;
+    background-color: var(--white);
+    opacity: .5;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.hero__span{
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 0.0625rem;
+}
+
+.hero__copy{
+    font-size: .85rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-transform: uppercase;
 }
