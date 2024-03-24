@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* outline: 3px solid red; */
 }
 
 :root{
@@ -357,6 +356,10 @@ body{
         font-size: 2.5rem;
     }
 
+    .about__tittle::after{
+        width: 20%;
+    }
+
     .about__copy{
         font-size: 1rem;
     }
@@ -444,8 +447,9 @@ body{
 /* ======= DESSERT START =======  */
 
 .dessert{
+    width: 100%;
     text-align: center;
-    padding: 4rem;
+    padding: 4rem 0;
 }
 
 .dessert__tittle{
@@ -482,6 +486,10 @@ body{
     cursor: pointer;
 }
 
+.dessert__img:hover{
+    opacity: .6;
+}
+
 .dessert__cards{
     display: flex;
     flex-direction: column;
@@ -491,7 +499,8 @@ body{
 }
 
 .dessert__card{
-    max-width: 480px;
+    max-width: 380px;
+    height: 400px;
 }
 
 .dessert__texts{
@@ -512,11 +521,35 @@ body{
     color: var(--brown);
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-size: 1.15rem;
-    font-weight: 300;
+    font-size: 1.25rem;
+    font-weight: 400;
 }
 
 /* ======= DESSERTS END =======  */
 
 
 /* ======= DESSERT QUERIES START =======  */
+
+@media screen and (min-width:1024px){
+    .dessert__cards{
+        padding: 1.5rem 0 1.5rem 0;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-items: center;
+        gap: 5rem 2rem;
+    }
+
+    .dessert__tittle::after{
+        width: 30%;
+    }
+
+    .dessert__tittle{
+        font-size: 2.5rem;
+    }
+
+    .dessert__copy{
+        font-size: 1rem;
+    }
+}
+
+/* ======= DESSERT QUERIES END =======  */
