@@ -647,9 +647,82 @@ body{
 
 /* ======= COLD QUERIES END =======  */
 
-/* ======= BANENR SECTION START =======  */
+/* ======= BANNER SECTION START =======  */
 
 .banner--third{
 background-image: linear-gradient(180deg, #00000096, #020202c2), url(./img/final.jpg)
 }
 
+/* ======= BANNER SECTION END =======  */
+
+/* ======= SHOP SECTION START =======  */
+
+.shop{
+    width: 100%;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.shop__tittle{
+    font-size: 2rem;
+    color: var(--dark-brown);
+    text-transform: uppercase;
+    font-family: var(--font-tittle);
+}
+
+.shop__tittle::after{
+    content: "";
+    display: block;
+    margin: 6px auto;
+    width: 60%;
+    height: 1px;
+    background-color: var(--brown);  
+}
+
+.shop__copy{
+    color: var(--brown);
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: .85rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 60px;
+}
+
+.shop__img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.shop__cta{
+    margin-top: 40px;
+    text-decoration: none;
+    display: inline-block;
+    color: var(--white);
+    background-color: var(--black);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    width: 150px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.shop__cta:hover{
+    background-color: var(--dark-brown);
+}
+
+@media screen and (min-width:800px){
+    .shop__img{
+        width: 100%;
+        height: 450px;
+    }
+}
+
+@media screen and (min-width:1600px){
+    .shop__img{
+        width: 100%;
+        height: 600px;
+    }
+}
