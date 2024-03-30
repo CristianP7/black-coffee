@@ -709,8 +709,16 @@ background-image: linear-gradient(180deg, #00000096, #020202c2), url(./img/final
     line-height: 35px;
 }
 
+
+.shop__cta{
+    color: var(--dark-brown);
+    outline: 1px solid var(--brown);
+    background-color: #58351e00;
+}
+
 .shop__cta:hover{
     background-color: var(--dark-brown);
+    color: var(--white);
 }
 
 @media screen and (min-width:800px){
