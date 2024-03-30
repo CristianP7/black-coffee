@@ -219,7 +219,7 @@ body{
 }
 
 .about{
-    padding: 60px 0;
+    padding: 60px 0 20px 0;
 }
 
 .about__texts{
@@ -266,23 +266,23 @@ body{
     flex-direction: column;
     gap: 5rem;
     text-align: center;
-    padding: 1rem 0 2rem 0;
 }
 
 .about__card{
     max-width: 380px;
     margin: 0 auto;
-    height: 500px;
+    height: 540px;
+    background-color: #ffff;
+    outline: 1px solid #3024142c;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #ffff;
-    outline: 1px solid #3024142c;
-    padding-bottom: 12px;
 }
 
 
 .about__card-tittle{
+    margin: 1rem 0 1rem 0;
     font-size: 1.35rem;
     font-weight: 800;
     letter-spacing: 1px;
@@ -298,7 +298,7 @@ body{
     color: var(--brown);
     line-height: 1.5;
     word-break: normal;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
 .about__card-tittle, .about__card-copy{
