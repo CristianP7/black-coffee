@@ -735,3 +735,56 @@ background-image: linear-gradient(180deg, #00000096, #020202c2), url(./img/final
         height: 600px;
     }
 }
+
+/* ======= SHOP QUERIES END =======  */
+
+/* ======= FOOTER SECCTION START =======  */
+
+.footer{
+    padding: 2rem 0 ;
+    background-color: #1b1104;
+    color: var(--white);
+}
+
+.footer__logo{
+    color: var(--white);
+}
+
+.footer__texts{
+    margin: 1.25rem 0 2.5rem 0;
+    font-size: 1.105rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.footer__grid{
+    display: grid;
+    gap: 0rem 1rem;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.footer__list{
+    list-style: none;
+}
+
+.footer__name{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer__list{
+    font-size: .9rem;
+    line-height: 2;
+}
+
+.attribution{
+    margin-top: 2rem;
+    color: var(--white);
+    text-decoration: none;
+    text-align: center;
+    font-weight: 300;
+}
+.cristian{
+    color: var(--white);
+    text-decoration: underline;
+}
