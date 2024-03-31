@@ -225,7 +225,6 @@ body{
 
 .about__texts{
     text-align: center;
-    margin-bottom: 40px;
 }
 
 .about__tittle{
@@ -272,18 +271,15 @@ body{
 .about__card{
     max-width: 380px;
     margin: 0 auto;
-    height: 540px;
+    height: 560px;
     background-color: #ffff;
     outline: 1px solid #3024142c;
-    padding-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    padding-bottom: 1rem;
 }
 
 
 .about__card-tittle{
-    margin: 1rem 0 1rem 0;
+    margin: 1rem 0 0 0;
     font-size: 1.35rem;
     font-weight: 800;
     letter-spacing: 1px;
@@ -292,14 +288,15 @@ body{
 }
 
 .about__card-copy{
-    height: 120px;
+    height: 200px;
+    display: flex;
+    align-items: center;
     font-size: 1rem;
     font-weight: 400;
     text-align: justify;
     color: var(--brown);
     line-height: 1.5;
     word-break: normal;
-    margin-bottom: 3rem;
 }
 
 .about__card-tittle, .about__card-copy{
@@ -309,18 +306,21 @@ body{
 .about__cta{
     text-decoration: none;
     display: inline-block;
-    color: var(--white);
-    background-color: var(--black);
+    color: var(--dark-brown);
+    outline: 1px solid var(--brown);
+    background-color: #58351e00;
     font-size: 1rem;
     letter-spacing: 1px;
     font-weight: 400;
     width: 150px;
     height: 35px;
     line-height: 35px;
+    margin: 1rem 0 0 0;
 }
 
 .about__cta:hover{
     background-color: var(--dark-brown);
+    color: var(--white);
 }
 
 /* ======= ABOUT END =======  */
