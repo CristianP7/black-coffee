@@ -694,6 +694,7 @@ background-image: linear-gradient(180deg, #00000096, #020202c2), url(./img/final
     width: 100%;
     height: 200px;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .shop__cta{
@@ -746,6 +747,7 @@ background-image: linear-gradient(180deg, #00000096, #020202c2), url(./img/final
     color: var(--white);
 }
 
+
 .footer__logo{
     color: var(--white);
 }
@@ -777,8 +779,44 @@ background-image: linear-gradient(180deg, #00000096, #020202c2), url(./img/final
     line-height: 2;
 }
 
-.attribution{
+.footer__item--margin{
     margin-top: 2rem;
+}
+
+/* ======= FOOTER SECCTION START =======  */
+
+/* ======= FOOTER SECCTION END =======  */
+
+
+/* ======= FOOTER QUERIESS START =======  */
+
+@media screen and (min-width:768px){
+    .container__footer{
+        margin-top: 4rem;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__item{
+        width: 200px;
+    }
+
+    .footer__info--container{
+        width: 50%;
+    }
+    
+    .footer__item--margin{
+        margin: 0;
+    }
+
+    .footer__item{
+        font-size: 1.5rem;
+    }
+}
+
+.attribution{
+    margin-top: 5rem;
     color: var(--white);
     text-decoration: none;
     text-align: center;
