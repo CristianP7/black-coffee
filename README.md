@@ -22,5 +22,5 @@
 
 ¡Tu contribución es bienvenida! Si tienes ideas para mejorar la página web de Black Coffee, ya sea agregando nuevas características, optimizando el rendimiento o corrigiendo errores, no dudes en abrir un issue o enviar una solicitud de extracción. Juntos, podemos hacer que Black Coffee sea aún mejor.
 
-Diseño original de:장 재희 (https://www.behance.net/ux-jjh).
+Diseño inspirado de: 장 재희 (https://www.behance.net/ux-jjh).
 Desarrollado por mi persona.
