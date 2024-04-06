@@ -43,12 +43,12 @@
                 <div class="sidebar">
                     <ul class="hero__sidebar">
                         <i onclick=hideSidebar() class="hero__items fa-solid fa-x"></i>
-                        <li class="hero__items--sidebar"><a href="#home">Home</a></li>
-                        <li class="hero__items--sidebar"><a href="#coffee">Coffee</a></li>
-                        <li class="hero__items--sidebar"><a href="#bakery">Bakery</a></li>
-                        <li class="hero__items--sidebar"><a href="#coldBrews">Cold Brews</a></li>
-                        <li class="hero__items--sidebar"><a href="#shop">Shop</a></li>
-                        <li class="hero__items--sidebar"><a href="#login">Login</a></li>
+                        <li onclick=hideSidebar() class="hero__items--sidebar"><a href="#home">Home</a></li>
+                        <li onclick=hideSidebar() class="hero__items--sidebar"><a href="#coffee">Coffee</a></li>
+                        <li onclick=hideSidebar() class="hero__items--sidebar"><a href="#bakery">Bakery</a></li>
+                        <li onclick=hideSidebar() class="hero__items--sidebar"><a href="#coldBrews">Cold Brews</a></li>
+                        <li onclick=hideSidebar() class="hero__items--sidebar"><a href="#shop">Shop</a></li>
+                        <li onclick=hideSidebar() class="hero__items--sidebar"><a href="#login">Login</a></li>
                     </ul>
                 </div>
 
@@ -294,9 +294,7 @@
             const sidebar = document.querySelector('.sidebar')
             sidebar.style.display = 'none';
         }
-
     </script>
-
     <script src="https://kit.fontawesome.com/2a76a9117a.js" crossorigin="anonymous"></script>
 </body>
 
