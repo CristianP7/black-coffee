@@ -22,9 +22,7 @@
         <div class="container">
             <div class="header__flex">
                 <div class="header__checkbox-container">
-                    <input class="header__checkbox" type="checkbox" id="open-menu">
-                    <label class="header__open-nav-button" for="open-menu" role="button"><i
-                            class="fa-solid fa-bars"></i></label>
+                    <i onclick=showSidebar()  class="fa-solid fa-bars"></i></label>
                 </div>
 
                 <div class="header__logo-container">
@@ -41,6 +39,18 @@
                         <li class="hero__items"><a href="">Login</a></li>
                     </ul>
                 </nav>
+
+                <div class="sidebar">
+                    <ul class="hero__sidebar">
+                        <i onclick=hideSidebar() class="hero__items fa-solid fa-x"></i>
+                        <li class="hero__items--sidebar"><a href="">Home</a></li>
+                        <li class="hero__items--sidebar"><a href="">Coffee</a></li>
+                        <li class="hero__items--sidebar"><a href="">Cold Brews</a></li>
+                        <li class="hero__items--sidebar"><a href="">Bakery</a></li>
+                        <li class="hero__items--sidebar"><a href="">Shop</a></li>
+                        <li class="hero__items--sidebar"><a href="">Login</a></li>
+                    </ul>
+                </div>
 
                 <div class="header__search-container">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -73,7 +83,9 @@
                         </figure>
 
                         <h3 class="about__card-tittle">Lorem, ipsum.</h3>
-                        <p class="about__card-copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptas quaerat libero, reiciendis numquam sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nesciunt.</p>
+                        <p class="about__card-copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptas
+                            quaerat libero, reiciendis numquam sequi. Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Illum, nesciunt.</p>
 
                         <div class="about__cta-container">
                             <a class="about__cta" href="#">See Detail</a>
@@ -86,7 +98,9 @@
                         </figure>
 
                         <h3 class="about__card-tittle">Lorem, ipsum.</h3>
-                        <p class="about__card-copy">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum unde placeat repellat accusantium ducimus eaque praesentium velit error, animi dolore dolorum quaerat culpa!.</p>
+                        <p class="about__card-copy">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum unde
+                            placeat repellat accusantium ducimus eaque praesentium velit error, animi dolore dolorum
+                            quaerat culpa!.</p>
 
                         <div class="about__cta-container">
                             <a class="about__cta" href="#">See Detail</a>
@@ -100,7 +114,9 @@
 
                         <h3 class="about__card-tittle">Lorem, ipsum.</h3>
 
-                        <p class="about__card-copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente temporibus inventore quae eveniet quia reprehenderit, quos quaerat sint! Error nemo dicta voluptatibus eaque, in laboriosam rerum fugiat.</p>
+                        <p class="about__card-copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+                            temporibus inventore quae eveniet quia reprehenderit, quos quaerat sint! Error nemo dicta
+                            voluptatibus eaque, in laboriosam rerum fugiat.</p>
 
                         <div class="about__cta-container">
                             <a class="about__cta" href="#">See Detail</a>
@@ -114,7 +130,9 @@
 
 
                         <h3 class="about__card-tittle">Lorem, ipsum.</h3>
-                        <p class="about__card-copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, facere odio. Sed debitis consequuntur odit officiis, tenetur atque architecto harum rem? Architecto, animi commodi. Temporibus et aperiam fugiat.</p>
+                        <p class="about__card-copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos,
+                            facere odio. Sed debitis consequuntur odit officiis, tenetur atque architecto harum rem?
+                            Architecto, animi commodi. Temporibus et aperiam fugiat.</p>
 
                         <div class="about__cta-container">
                             <a class="about__cta" href="#">See Detail</a>
@@ -259,12 +277,25 @@
                     <li class="footer__list">Lorem ipsum dolor sit.</li>
                 </div>
             </div>
-            
+
             <div class="attribution">
                 <span>Coded by <a class="cristian" href="#">Cristian Pereira</a></span>
             </div>
         </footer>
     </main>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'block';
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none';
+        }
+
+    </script>
 
     <script src="https://kit.fontawesome.com/2a76a9117a.js" crossorigin="anonymous"></script>
 </body>

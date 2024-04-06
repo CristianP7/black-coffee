@@ -178,6 +178,53 @@ body{
     text-transform: uppercase;
 }
 
+.sidebar{
+    display: none;
+}
+
+.hero__sidebar{
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.hero__sidebar{
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    background-color: rgba(252, 250, 250, 0.959);
+    backdrop-filter: blur(10px);
+    list-style: none;
+}
+
+.hero__items--sidebar a{
+    display: inline-block;
+    color: var(--black);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.25rem;
+    width: 250px;
+    height: 50px;
+    padding-left: 20px;
+    line-height: 40px;
+}
+
+.hero__items--sidebar a:hover{
+    background-color: var(--white);
+    color: var(--dark-brown);
+}
+
+.fa-x{
+    position: relative;
+    top: -40px;
+    left: 20px;
+}
+
 /* ======= HERO SECTION ENDS =======  */
 
 
